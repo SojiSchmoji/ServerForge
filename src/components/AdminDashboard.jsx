@@ -290,7 +290,7 @@ export default function AdminDashboard() {
 
         {/* ── OVERVIEW TAB ── */}
         {activeTab === 'overview' && (
-          <div className="animate-in fade-in duration-300 max-w-[1600px] w-full mx-auto">
+          <div className="animate-in fade-in duration-300 max-w-5xl mx-auto">
             <h2 className="text-xl font-black text-white mb-5 flex items-center gap-2">
               <LayoutDashboard className="text-purple-400" size={20} /> Network Matrix
             </h2>
@@ -339,7 +339,7 @@ export default function AdminDashboard() {
 
         {/* ── HARDWARE NODES TAB ── */}
         {activeTab === 'infrastructure' && (
-          <div className="animate-in fade-in duration-300 max-w-[1600px] w-full mx-auto">
+          <div className="animate-in fade-in duration-300 max-w-5xl mx-auto">
             <div className="flex items-center justify-between mb-5">
               <h2 className="text-xl font-black text-white flex items-center gap-2">
                 <HardDrive className="text-purple-400" size={20} /> Hardware Nodes
@@ -349,7 +349,7 @@ export default function AdminDashboard() {
               </span>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
               {nodes.map((node) => {
                 const stats = computeNodeStats(node, servers);
                 return (
@@ -462,7 +462,7 @@ export default function AdminDashboard() {
 
         {/* ── LOBBIES / INSTANCES TAB ── */}
         {activeTab === 'lobbies' && (
-          <div className="animate-in fade-in duration-300 max-w-[1600px] w-full mx-auto">
+          <div className="animate-in fade-in duration-300 max-w-5xl mx-auto">
             <div className="flex justify-between items-end mb-5 border-b border-slate-800 pb-4">
               <div>
                 <h2 className="text-xl font-black text-white flex items-center gap-2">
@@ -478,7 +478,7 @@ export default function AdminDashboard() {
               </button>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-4">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
               {servers.map((server) => {
                 const isLoading = loadingId === `server-${server.instance_id}`;
                 return (
@@ -558,7 +558,7 @@ export default function AdminDashboard() {
 
         {/* ── SECURITY TAB ── */}
         {activeTab === 'security' && (
-          <div className="animate-in fade-in duration-300 max-w-[1600px] w-full mx-auto">
+          <div className="animate-in fade-in duration-300 max-w-5xl mx-auto">
             <div className="mb-5 border-b border-slate-800 pb-4">
               <h2 className="text-xl font-black text-white flex items-center gap-2">
                 <Shield className="text-purple-400" size={20} /> Global Ban Shield
@@ -618,7 +618,7 @@ export default function AdminDashboard() {
 
         {/* ── EXTENSIONS TAB ── */}
         {activeTab === 'extensions' && (
-          <div className="animate-in fade-in duration-300 max-w-[1600px] w-full mx-auto">
+          <div className="animate-in fade-in duration-300 max-w-5xl mx-auto">
             <h2 className="text-xl font-black text-white mb-5 flex items-center gap-2">
               <Puzzle className="text-purple-400" size={20} /> Extension Modules
             </h2>
