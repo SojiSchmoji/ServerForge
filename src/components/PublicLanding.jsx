@@ -451,7 +451,7 @@ export default function PublicLanding() {
         {/* Right edge accent line */}
         <div className="absolute top-0 right-0 w-px h-full bg-gradient-to-b from-transparent via-purple-500/20 to-transparent" />
 
-        <div className="max-w-7xl mx-auto px-6 py-10 relative z-10">
+        <div className="max-w-[1600px] w-full mx-auto px-6 py-10 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
 
             {/* Badge */}
@@ -510,7 +510,7 @@ export default function PublicLanding() {
 
         {/* Stats ticker */}
         <div className="border-t border-slate-800/60 bg-slate-950/60 backdrop-blur-sm">
-          <div className="max-w-7xl mx-auto px-6 py-2 flex items-center gap-6 text-[10px] font-black text-slate-600 uppercase tracking-widest">
+          <div className="max-w-[1600px] w-full mx-auto px-6 py-2 flex items-center gap-6 text-[10px] font-black text-slate-600 uppercase tracking-widest">
             <div className="flex items-center gap-2">
               <span className="relative flex h-1.5 w-1.5">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
@@ -532,8 +532,8 @@ export default function PublicLanding() {
       </div>
 
       {/* ── Server Grid ── */}
-      <div className="max-w-7xl mx-auto px-6 py-5 relative z-10">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+      <div className="max-w-[1600px] w-full mx-auto px-6 py-5 relative z-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4">
           {filtered.map((server) => (
             <ServerCard
               key={server.instance_id}
