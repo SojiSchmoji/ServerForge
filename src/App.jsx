@@ -37,7 +37,7 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-200 font-sans selection:bg-purple-500/30 flex flex-col">
+    <div className="h-screen bg-slate-950 text-slate-200 font-sans selection:bg-purple-500/30 flex flex-col overflow-hidden">
 
       {/* ── Top Navigation ── */}
       <nav className="sticky top-0 z-50 shrink-0 h-14 flex items-center justify-between px-6 bg-slate-950/95 backdrop-blur-md border-b border-slate-800 relative">
@@ -111,7 +111,7 @@ function App() {
       </nav>
 
       {/* ── Main Content ── */}
-      <main className="flex-1 overflow-hidden relative">
+      <main className="flex-1 min-h-0 overflow-hidden relative">
 
         {/* Public view */}
         {currentMode === 'public' && (
